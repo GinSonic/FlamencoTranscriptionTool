@@ -36,7 +36,7 @@ void audio::loadAudio(){
 //--------------------------------------------------------------
 void audio::drawAudio(){
     
-    //waveform
+    // waveform
     ofEnableAlphaBlending();
     ofSetColor(25,25,25,50);
     float x1, x2, y1, y2,y12, y22;

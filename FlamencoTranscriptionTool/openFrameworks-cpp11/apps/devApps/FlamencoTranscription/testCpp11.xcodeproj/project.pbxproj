@@ -33,6 +33,8 @@
 		F3284B8918EDB4A7004275D0 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3284B8818EDB4A7004275D0 /* libiconv.dylib */; };
 		F368FB2918F3076300535647 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F368FB2718F3076300535647 /* audio.cpp */; };
 		F379E08518EEB0AB00C1DDF6 /* predominantmelody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F379E08418EEB0AB00C1DDF6 /* predominantmelody.cpp */; };
+		F3A0270A18F35D22002DE614 /* ofxCsv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3A0270818F35D22002DE614 /* ofxCsv.cpp */; };
+		F3A0270D18F35D4B002DE614 /* pm_from_csv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3A0270B18F35D4B002DE614 /* pm_from_csv.cpp */; };
 		F3F3C72618F31633008909E2 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71518F31633008909E2 /* fft.cpp */; };
 		F3F3C72718F31633008909E2 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71718F31633008909E2 /* maxiAtoms.cpp */; };
 		F3F3C72818F31633008909E2 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71918F31633008909E2 /* maxiFFT.cpp */; };
@@ -105,6 +107,10 @@
 		F379E08418EEB0AB00C1DDF6 /* predominantmelody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = predominantmelody.cpp; sourceTree = "<group>"; };
 		F379E08618EEB0BF00C1DDF6 /* predominantmelody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = predominantmelody.h; sourceTree = "<group>"; };
 		F38335A918EF1B80001D146F /* PMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMThread.h; sourceTree = "<group>"; };
+		F3A0270818F35D22002DE614 /* ofxCsv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCsv.cpp; sourceTree = "<group>"; };
+		F3A0270918F35D22002DE614 /* ofxCsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCsv.h; sourceTree = "<group>"; };
+		F3A0270B18F35D4B002DE614 /* pm_from_csv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pm_from_csv.cpp; sourceTree = "<group>"; };
+		F3A0270C18F35D4B002DE614 /* pm_from_csv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pm_from_csv.h; sourceTree = "<group>"; };
 		F3F3C71318F31633008909E2 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		F3F3C71518F31633008909E2 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
 		F3F3C71618F31633008909E2 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				F3A0270618F35D22002DE614 /* ofxCsv */,
 				F3F3C71218F31633008909E2 /* ofxMaxim */,
 			);
 			name = addons;
@@ -238,6 +245,8 @@
 				F38335A918EF1B80001D146F /* PMThread.h */,
 				F368FB2718F3076300535647 /* audio.cpp */,
 				F368FB2818F3076300535647 /* audio.h */,
+				F3A0270B18F35D4B002DE614 /* pm_from_csv.cpp */,
+				F3A0270C18F35D4B002DE614 /* pm_from_csv.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -249,6 +258,24 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F3A0270618F35D22002DE614 /* ofxCsv */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0270718F35D22002DE614 /* src */,
+			);
+			name = ofxCsv;
+			path = ../../../../../../../../PROJEKTE/OpenFrameworks/of_v0.8.0_ios_release/addons/ofxCsv;
+			sourceTree = "<group>";
+		};
+		F3A0270718F35D22002DE614 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0270818F35D22002DE614 /* ofxCsv.cpp */,
+				F3A0270918F35D22002DE614 /* ofxCsv.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		F3F3C71218F31633008909E2 /* ofxMaxim */ = {
@@ -379,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A0270A18F35D22002DE614 /* ofxCsv.cpp in Sources */,
 				F3F3C72818F31633008909E2 /* maxiFFT.cpp in Sources */,
 				F368FB2918F3076300535647 /* audio.cpp in Sources */,
 				F3F3C72918F31633008909E2 /* maxiGrains.cpp in Sources */,
@@ -388,6 +416,7 @@
 				F3F3C72718F31633008909E2 /* maxiAtoms.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				F3F3C72618F31633008909E2 /* fft.cpp in Sources */,
+				F3A0270D18F35D4B002DE614 /* pm_from_csv.cpp in Sources */,
 				F379E08518EEB0AB00C1DDF6 /* predominantmelody.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);

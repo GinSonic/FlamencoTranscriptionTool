@@ -15,6 +15,9 @@ void ofApp::setup(){
     playFlag=false;
     loadFlag=false;
     
+    // predominant melody from csv
+    csvFlag=false;
+    
     // predominant melody calculation
     T.pm_calc=false;
     T.startThread(true, false);
@@ -41,6 +44,9 @@ void ofApp::draw(){
     //ofSetColor(50, 50, 50);
     if (loadFlag){
         wave.drawAudio();
+        if (csvFlag){
+            c.drawCSV(wave.wav.position, wave.wav.length);
+        }
     }
     
     // predominant melody computation progress
@@ -81,6 +87,11 @@ void ofApp::keyPressed(int key){
         playFlag=!playFlag;
     }
     
+    if(key=='c'){
+        c.loadCSV();
+        csvFlag=true;
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -90,7 +101,8 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-
+    //cout << "x" << x << endl;
+    //cout << "y" << y << endl;
 }
 
 //--------------------------------------------------------------
@@ -101,11 +113,9 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
     
-    cout << x << endl;
     // set playback position
     if (x>ofGetWidth()/10 && x<9*ofGetWidth()/10 && y<0.2*ofGetHeight()+40 &&  y>0.2*ofGetHeight()-40){
         wave.wav.setPosition((float(x)-float(ofGetWidth())*0.1)/(float(ofGetWidth())*0.8));
-        cout << (float(x)-float(ofGetWidth())*0.1)/(float(ofGetWidth())*0.8) << endl;
     }
 }
 
