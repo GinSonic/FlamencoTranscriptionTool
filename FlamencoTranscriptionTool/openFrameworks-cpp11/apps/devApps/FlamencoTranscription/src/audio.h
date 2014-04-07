@@ -8,6 +8,7 @@ class audio {
 public:
     void loadAudio();
     void drawAudio();
+    void playAudio();
     string path;
     std::vector<float> env;
     ofxMaxiSample wav;

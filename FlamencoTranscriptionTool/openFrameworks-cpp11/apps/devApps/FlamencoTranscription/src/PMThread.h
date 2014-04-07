@@ -1,4 +1,3 @@
-
 #include <essentia/algorithmfactory.h>
 #include <essentia/essentiamath.h>
 #include "predominantmelody.h"
