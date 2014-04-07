@@ -1,17 +1,17 @@
 #pragma once
 
 #include "ofMain.h"
-#include <essentia/algorithmfactory.h>
-#include <essentia/essentiamath.h>
-#include "predominantmelody.h"
+#include "PMThread.h"
+#include "audio.h"
 
 class ofApp : public ofBaseApp{
     
 public:
+    
+    // main functions
     void setup();
     void update();
     void draw();
-    
     void keyPressed(int key);
     void keyReleased(int key);
     void mouseMoved(int x, int y );
@@ -21,9 +21,22 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+    void exit();
     
-    essentia::standard::PredominantMelody pm;
+    // predom. melody calculation
+    PMThread T;
     vector<float> pitchD;
     float maxpitch;
+    
+    // audio playback
+    audio wave;
+    bool loadFlag;
+    bool playFlag;
+    
+    
+    
+    
+    
+    
     
 };

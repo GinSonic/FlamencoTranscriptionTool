@@ -31,7 +31,15 @@
 		F3284B8518EDB48F004275D0 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3284B8418EDB48F004275D0 /* libbz2.dylib */; };
 		F3284B8718EDB49D004275D0 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3284B8618EDB49D004275D0 /* VideoDecodeAcceleration.framework */; };
 		F3284B8918EDB4A7004275D0 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3284B8818EDB4A7004275D0 /* libiconv.dylib */; };
+		F368FB2918F3076300535647 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F368FB2718F3076300535647 /* audio.cpp */; };
 		F379E08518EEB0AB00C1DDF6 /* predominantmelody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F379E08418EEB0AB00C1DDF6 /* predominantmelody.cpp */; };
+		F3F3C72618F31633008909E2 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71518F31633008909E2 /* fft.cpp */; };
+		F3F3C72718F31633008909E2 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71718F31633008909E2 /* maxiAtoms.cpp */; };
+		F3F3C72818F31633008909E2 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71918F31633008909E2 /* maxiFFT.cpp */; };
+		F3F3C72918F31633008909E2 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71B18F31633008909E2 /* maxiGrains.cpp */; };
+		F3F3C72A18F31633008909E2 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71D18F31633008909E2 /* maxiMFCC.cpp */; };
+		F3F3C72B18F31633008909E2 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C71F18F31633008909E2 /* maximilian.cpp */; };
+		F3F3C72C18F31633008909E2 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C72218F31633008909E2 /* stb_vorbis.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +100,28 @@
 		F3284B8418EDB48F004275D0 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 		F3284B8618EDB49D004275D0 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
 		F3284B8818EDB4A7004275D0 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F368FB2718F3076300535647 /* audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio.cpp; sourceTree = "<group>"; };
+		F368FB2818F3076300535647 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
 		F379E08418EEB0AB00C1DDF6 /* predominantmelody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = predominantmelody.cpp; sourceTree = "<group>"; };
 		F379E08618EEB0BF00C1DDF6 /* predominantmelody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = predominantmelody.h; sourceTree = "<group>"; };
-		F38335A918EF1B80001D146F /* ThreadedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadedObject.h; sourceTree = "<group>"; };
+		F38335A918EF1B80001D146F /* PMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMThread.h; sourceTree = "<group>"; };
+		F3F3C71318F31633008909E2 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		F3F3C71518F31633008909E2 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
+		F3F3C71618F31633008909E2 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		F3F3C71718F31633008909E2 /* maxiAtoms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiAtoms.cpp; sourceTree = "<group>"; };
+		F3F3C71818F31633008909E2 /* maxiAtoms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiAtoms.h; sourceTree = "<group>"; };
+		F3F3C71918F31633008909E2 /* maxiFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiFFT.cpp; sourceTree = "<group>"; };
+		F3F3C71A18F31633008909E2 /* maxiFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiFFT.h; sourceTree = "<group>"; };
+		F3F3C71B18F31633008909E2 /* maxiGrains.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiGrains.cpp; sourceTree = "<group>"; };
+		F3F3C71C18F31633008909E2 /* maxiGrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiGrains.h; sourceTree = "<group>"; };
+		F3F3C71D18F31633008909E2 /* maxiMFCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiMFCC.cpp; sourceTree = "<group>"; };
+		F3F3C71E18F31633008909E2 /* maxiMFCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiMFCC.h; sourceTree = "<group>"; };
+		F3F3C71F18F31633008909E2 /* maximilian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maximilian.cpp; sourceTree = "<group>"; };
+		F3F3C72018F31633008909E2 /* maximilian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
+		F3F3C72118F31633008909E2 /* sineTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sineTable.h; sourceTree = "<group>"; };
+		F3F3C72218F31633008909E2 /* stb_vorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_vorbis.c; sourceTree = "<group>"; };
+		F3F3C72318F31633008909E2 /* stb_vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_vorbis.h; sourceTree = "<group>"; };
+		F3F3C72518F31633008909E2 /* ofxMaxim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +159,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				F3F3C71218F31633008909E2 /* ofxMaxim */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -207,7 +235,9 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				F38335A918EF1B80001D146F /* ThreadedObject.h */,
+				F38335A918EF1B80001D146F /* PMThread.h */,
+				F368FB2718F3076300535647 /* audio.cpp */,
+				F368FB2818F3076300535647 /* audio.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -219,6 +249,47 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F3F3C71218F31633008909E2 /* ofxMaxim */ = {
+			isa = PBXGroup;
+			children = (
+				F3F3C71318F31633008909E2 /* install.xml */,
+				F3F3C71418F31633008909E2 /* libs */,
+				F3F3C72418F31633008909E2 /* src */,
+			);
+			name = ofxMaxim;
+			path = ../../../../../../../../PROJEKTE/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxMaxim/ofxMaxim/ofxMaxim;
+			sourceTree = "<group>";
+		};
+		F3F3C71418F31633008909E2 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F3F3C71518F31633008909E2 /* fft.cpp */,
+				F3F3C71618F31633008909E2 /* fft.h */,
+				F3F3C71718F31633008909E2 /* maxiAtoms.cpp */,
+				F3F3C71818F31633008909E2 /* maxiAtoms.h */,
+				F3F3C71918F31633008909E2 /* maxiFFT.cpp */,
+				F3F3C71A18F31633008909E2 /* maxiFFT.h */,
+				F3F3C71B18F31633008909E2 /* maxiGrains.cpp */,
+				F3F3C71C18F31633008909E2 /* maxiGrains.h */,
+				F3F3C71D18F31633008909E2 /* maxiMFCC.cpp */,
+				F3F3C71E18F31633008909E2 /* maxiMFCC.h */,
+				F3F3C71F18F31633008909E2 /* maximilian.cpp */,
+				F3F3C72018F31633008909E2 /* maximilian.h */,
+				F3F3C72118F31633008909E2 /* sineTable.h */,
+				F3F3C72218F31633008909E2 /* stb_vorbis.c */,
+				F3F3C72318F31633008909E2 /* stb_vorbis.h */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		F3F3C72418F31633008909E2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F3F3C72518F31633008909E2 /* ofxMaxim.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +379,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F3C72818F31633008909E2 /* maxiFFT.cpp in Sources */,
+				F368FB2918F3076300535647 /* audio.cpp in Sources */,
+				F3F3C72918F31633008909E2 /* maxiGrains.cpp in Sources */,
+				F3F3C72A18F31633008909E2 /* maxiMFCC.cpp in Sources */,
+				F3F3C72B18F31633008909E2 /* maximilian.cpp in Sources */,
+				F3F3C72C18F31633008909E2 /* stb_vorbis.c in Sources */,
+				F3F3C72718F31633008909E2 /* maxiAtoms.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				F3F3C72618F31633008909E2 /* fft.cpp in Sources */,
 				F379E08518EEB0AB00C1DDF6 /* predominantmelody.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
@@ -406,7 +485,7 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					"/PROJEKTE/FlamencoTranscription/i386-2.0.1/include",
+					"\"$(SRCROOT)/../../../../i386-2.0.1/include\"",
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -415,7 +494,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"<Multiple",
 					"values>",
-					"/PROJEKTE/FlamencoTranscription/i386-2.0.1",
+					"/Users/Wellenreiter/git/FlamencoTranscriptionTool/i386-2.0.1",
 					/PROJEKTE/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxMaxim/ofxMaxim/ofMaximExampleVS2010/bin,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -445,7 +524,7 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					"/PROJEKTE/FlamencoTranscription/i386-2.0.1/include",
+					"\"$(SRCROOT)/../../../../i386-2.0.1/include\"",
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -454,7 +533,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"<Multiple",
 					"values>",
-					"/PROJEKTE/FlamencoTranscription/i386-2.0.1",
+					"/Users/Wellenreiter/git/FlamencoTranscriptionTool/i386-2.0.1",
 					/PROJEKTE/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxMaxim/ofxMaxim/ofMaximExampleVS2010/bin,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;

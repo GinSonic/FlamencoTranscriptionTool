@@ -79,6 +79,8 @@ class PredominantMelody {
     Real _duplicateMaxDistance;
     Real _duplicateMinDistance;
     
+    float progress;
+    std::string status;
     
     size_t _numberContours;
     Real _vibratoPitchStddev;

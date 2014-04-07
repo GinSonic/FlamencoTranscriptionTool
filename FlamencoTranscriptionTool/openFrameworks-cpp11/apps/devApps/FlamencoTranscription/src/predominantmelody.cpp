@@ -72,10 +72,6 @@ PredominantMelody::PredominantMelody() {
     
     essentia::init();
     
-
-    
-
-
 }
 
 void PredominantMelody::compute(vector<Real> signal, vector<Real>& pitch, vector<Real>& pitchConfidence) {
@@ -148,7 +144,9 @@ void PredominantMelody::compute(vector<Real> signal, vector<Real>& pitch, vector
 
   vector<vector<Real> > peakBins;
   vector<vector<Real> > peakSaliences;
-
+    
+    int p=0;
+    status="compute pitch salience";
   while (true) {
     // get a frame
     _frameCutter->compute();
@@ -164,24 +162,20 @@ void PredominantMelody::compute(vector<Real> signal, vector<Real>& pitch, vector
     powerSpectrum(frameWindowed, frameSpectrum, frameSize*zeroPaddingFactor);
 
     // calculate spectral peaks
-     
-      cout << "spectral peaks" << endl;
       _spectralPeaks->compute();
 
     // calculate salience function
-      
-      cout << "pitch salience function" << endl;
     _pitchSalienceFunction->compute();
 
     // calculate peaks of salience function
-      cout << "pitch salience function peaks" << endl;
     _pitchSalienceFunctionPeaks->compute();
 
     peakBins.push_back(frameSalienceBins);
     peakSaliences.push_back(frameSalienceValues);
-      
+      p++;
+      progress=(float(p)*float(hopSize))/float(signal.size());
   }
-    
+status="compute predominant melody...";
   // calculate pitch contours
   vector<vector<Real> > contoursBins;
   vector<vector<Real> > contoursSaliences;
